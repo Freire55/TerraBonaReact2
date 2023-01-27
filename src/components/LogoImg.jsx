@@ -1,11 +1,11 @@
 import './NavBar.css'
-import Logo from './terra_bona_logo-removebg-preview.png'
+// import Logo from '
 
 function LogoImg() {
     return(
         <img
           className="logo img-fluid"
-          src={Logo}
+          src="/images/terra_bona_logo-removebg-preview.png"
           alt="Terra Bona Logo" />
     )
 }

@@ -8,8 +8,17 @@ body {
   }
   
   .nav-bar {
-    background-image: linear-gradient(90deg,#72A276,#546A76);
-    border-bottom: inset #46414E;
+    /* background-image: linear-gradient(90deg,#72A276,#546A76); */
+    /* border-bottom: inset #46414E; */
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: auto 20px;
+    z-index: 1000;
   }
   
   .logo {
@@ -24,7 +33,8 @@ body {
   
   .lang {
     text-decoration: none;
-    color:#46414E;
+    color:black;
+    padding: 0 1.5em;
   }
   
   .lang:hover {
@@ -40,7 +50,7 @@ body {
     align-items: center ;
     justify-content: flex-end;
     gap: 1em;
-    margin-left: 2em;
+    margin-right: 2em;
   }
   
   .box {
@@ -115,40 +125,37 @@ body {
   }
 
   @media screen and (max-width: 585px) {
-    * {
-        font-size: 8px;
-    }
-    .read-more {
-        padding: 0.3em;
-    }
     .logo {
       display: none;
     }
     .langs{
-      width: 50%;
+      /* width: 50%;
       display: flex;
       justify-content: flex-start;
+      align-items: center;
       gap: 5em;
-      position: absolute;
-      top: 4%;
+      position: relative;
+      top: 4%; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .sign-up{
       width: 50%;
-      position: relative;
-      right: 5em;
     }
 
     .nav-bar {
-      height: auto;
-      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       overflow-x: hidden;
     }
    }
 
-   @media screen and (min-width: 585px) and (max-width: 650px) {
+   /* @media screen and (min-width: 585px) and (max-width: 650px) {
     * {
-        font-size: 10px;
+        /* font-size: 10px; 
     }
    }
 
@@ -162,4 +169,4 @@ body {
     * {
         font-size: 13px;
     } 
-   }
+   } */
