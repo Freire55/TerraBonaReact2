@@ -8,6 +8,7 @@ import Experiences from './components/diftexts/Experiences';
 import News from './components/diftexts/News';
 import Villas from './components/diftexts/Villas';
 import Vinhas from './components/diftexts/Vinhas';
+import Shop from './components/diftexts/Shop';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/vinhas' element={<Vinhas />} ></Route>
           <Route path='/news' element={<News />} ></Route>
           <Route path='/boaventura' element={<Boaventura />} ></Route>
+          <Route path='/shop' element={<Shop />} ></Route>
         </Routes>
       </Router>
     </>

@@ -9,7 +9,9 @@ function NavBar() {
         <div className="nav-bar">
             <div className=" nav-bar">
                 <div className="">
+                    <Link to="/">
                     <LogoImg />
+                    </Link>
                 </div>
                 <div className="langs no-img">
                     <a className="lang" href="indexpt.html"> Português </a>

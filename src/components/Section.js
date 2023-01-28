@@ -1,22 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 
 
 function Section({backgroundImg, title, content, btnTxt, path}) {
   return (
+    // <Fade bottom>
     <Container bgImage={backgroundImg}>
        {/* <Background> */}
-        <h1>{title}</h1>
+       <Fade bottom>
+         <h1>{title}</h1>
         <p>{content}</p>
         <Link to={{pathname: path}}>
+          {btnTxt &&
         <button className='button'>
         <span className="hover-underline-animation">{btnTxt}</span>
           </button>
+        }
         </Link>
+        </Fade>
        {/* </Background> */}
     </Container>
+        // </Fade>
   )
 }
 
@@ -34,7 +41,7 @@ const Container = styled.div`
     color: white;
     z-index: 3;
     // margin-bottom: 3em;
-    background:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),  ${props => `url(${props.bgImage})`};
+    background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),  ${props => `url(${props.bgImage})`};
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
