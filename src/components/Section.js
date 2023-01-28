@@ -1,14 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
-function Section({backgroundImg, title, content, btnTxt}) {
+
+function Section({backgroundImg, title, content, btnTxt, path}) {
   return (
     <Container bgImage={backgroundImg}>
        {/* <Background> */}
         <h1>{title}</h1>
         <p>{content}</p>
-        <p className='button'>{btnTxt}</p>
+        <Link to={{pathname: path}}>
+        <button className='button'>
+        <span className="hover-underline-animation">{btnTxt}</span>
+          </button>
+        </Link>
        {/* </Background> */}
     </Container>
   )
@@ -28,13 +34,49 @@ const Container = styled.div`
     color: white;
     z-index: 3;
     // margin-bottom: 3em;
-    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  ${props => `url(${props.bgImage})`};
+    background:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),  ${props => `url(${props.bgImage})`};
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    letter-spacing: 2.5px;
 
     .button {
-        cursor: pointer;
+      border: none;
+      background: none;
+    }
+    
+    .button span {
+      cursor: pointer;
+      padding-bottom: 7px;
+      letter-spacing: 3px;
+      font-size: 14px;
+      padding-right: 15px;
+      text-transform: uppercase;
+      color: white;
+    }
+    
+    .hover-underline-animation {
+      position: relative;
+      color: black;
+      padding-bottom: 20px;
+    }
+    
+    .hover-underline-animation:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: -6px;
+      background-color: #000000;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .button:hover .hover-underline-animation:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
 `
 

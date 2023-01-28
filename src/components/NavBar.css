@@ -115,7 +115,7 @@ body {
     transition: .3s transform linear, .3s height linear .5s;
   }
   
-  .login {
+  .loginnav {
     color: black;
     text-decoration: none;
     cursor: pointer;

@@ -18,7 +18,7 @@ function NavBar() {
                 </div>
                 <div className="sign-up no-img">
                     <Link to="/login">
-                    <button className="login box" id="show-login">
+                    <button className="loginnav box" id="show-login">
                         Login
                     </button>
                     </Link>
