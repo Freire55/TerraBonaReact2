@@ -4,23 +4,24 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Shop() {
   return (
-    
-    <div className='cards'>
-        <div class="card">
-            <div class="imagecard"><span class="textcard"></span></div>
-            <h2 class="titlecard">Pack Terra Bona Family Harvest 2020</h2>
-            <span class="pricecard">30.00 €</span>
+    <div className='container-fluid'>
+    <div className='cards row'>
+        <div className="card col-ms-4">
+            <div className="imagecard"><span className="textcard"></span></div>
+            <h2 className="titlecard">Pack Terra Bona Family Harvest 2020</h2>
+            <span className="pricecard">30.00 €</span>
         </div>
-        <div class="card">
-            <div class="imagecard1"><span class="textcard"></span></div>
-            <h2 class="titlecard">Pack Terra Bona Family Harvest 2020</h2>
-            <span class="pricecard">42.50 €</span>
+        <div className="card col-ms-4">
+            <div className="imagecard1"><span className="textcard"></span></div>
+            <h2 className="titlecard">Pack Terra Bona Family Harvest 2020</h2>
+            <span className="pricecard">42.50 €</span>
         </div>
-        <div class="card">
-            <div class="imagecard2"><span class="textcard"></span></div>
-            <h2 class="titlecard">Terra Bona All-Colection</h2>
-            <span class="pricecard">Esgotado</span>
+        <div className="card col-ms-4">
+            <div className="imagecard2"><span className="textcard"></span></div>
+            <h2 className="titlecard">Terra Bona All-Colection</h2>
+            <span className="pricecard">Esgotado</span>
         </div>
+    </div>
     </div>
   )
 }

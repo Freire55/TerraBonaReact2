@@ -71,7 +71,7 @@ ul:last-of-type {
     .firstparags, .secondparags {
         width: 100%
     }
-    .img-fluid {
+    /* .img-fluid {
         width: 100%;
-    }
+    } */
 }
