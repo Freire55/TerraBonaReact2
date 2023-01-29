@@ -1,0 +1,104 @@
+.difexp > h1 {
+    text-align: center;
+    margin: 3em;
+}
+
+.stay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.expcards > h2 {
+    text-align: center;
+}
+
+.cardtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+    margin: 7em 0;
+    /* padding-left: 7em; */
+}
+
+.book {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #1aaa37;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .book:hover {
+    background-color: #1ac92e;
+    box-shadow: 0 0 20px #6fc5ff50;
+  }
+  
+  .book:active {
+    background-color: #0e892e;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+  }
+
+.expcard {
+    min-height: 30em;
+    max-height: 33em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+   }
+   
+   
+   .expcard .titleexp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-top: 1em;
+    position: relative;
+    top: 5%;
+    font-weight: 400;
+   }
+   
+   .expcard .priceexp {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: relative;
+    top: 10%;
+    /* margin-bottom: 1em; */
+   }
+
+   .expcard .priceexp:first-of-type {
+    margin-top: 1em;
+   }
+   
+   .imageexp, .imageexp1, .imageexp2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 100%;
+    display: grid;
+    place-items: center;
+   }
+
+   .imageexp {
+    background-image: url(/public/images/Winery.jpg);
+   }
+
+   .imageexp1 {
+    background-image: url(/public/images/SailWine.jpg) ;
+   }
+
+   .imageexp2 {
+    background-image: url(/public/images/Vineyards.jpg);
+   }
