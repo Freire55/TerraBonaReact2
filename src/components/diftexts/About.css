@@ -1,0 +1,36 @@
+.inicio {
+    text-align: center;
+    align-items: center;
+}
+.inicio > h1 {
+    margin: 1.5em;
+}
+
+.inicio > p {
+    margin: 2em;
+}
+.intro {
+    margin: 0 15% 7em 15%;
+    text-align: center;
+}
+
+.textimg {
+    align-items: center;
+    padding: 2em;
+}
+
+.thanks {
+    margin: 2em 0 4em 0;
+}
+
+.thanks > a {
+    position: relative;
+    top: 1.5em;
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.thanks > a:hover {
+    color: purple;
+}
